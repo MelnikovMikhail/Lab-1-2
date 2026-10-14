@@ -8,3 +8,12 @@
 SimpleAddition      # ручной ввод
 Tests               # запуск тестов
 ```
+# Лабораторная работа №2
+
+Папка: `lr2`
+
+```
+LcmTests.cs         # тесты для класса lcm
+PalindromeTests.cs  # тесты для класса palindrome
+Program.cs          № для вывода в консоль
+```
