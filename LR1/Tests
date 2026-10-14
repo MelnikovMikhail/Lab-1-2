@@ -1,0 +1,31 @@
+using System;
+
+public class Tests
+{
+    public static void Main()
+    {
+        Console.WriteLine("=== Тест простого сложения ===");
+
+        Check("135", "77", "102");
+        Check("4", "13", "17");
+        Check("0", "0", "0");
+        Check("999", "999", "888");
+        Check("123", "456", "579");
+        Check("1000", "1", "1001");
+        Check("0", "1000", "1000");
+        Check("000", "000", "0");
+        Check("9", "9", "8");
+            
+        Console.WriteLine("Все тесты пройдены.");
+    }
+
+    static void Check(string a, string b, string expected)
+    {
+        string actual = Program.SimpleAdd(a, b);
+        string status = actual == expected
+            ? "OK"
+            : $"FAIL (ожидалось {expected})";
+
+        Console.WriteLine($"SimpleAdd({a}, {b}) = {actual} {status}");
+    }
+}
